@@ -8,14 +8,9 @@ const messages = {
   avoid: ["People with blue shirts", "Pommeranian dogs", "Food with beetroot"],
 };
 
-const mixedMessages = [
-  Math.floor(Math.random() * 3),
-  Math.floor(Math.random() * 3),
-  Math.floor(Math.random() * 3),
-];
 let message = `Your protective chant for this week is: ${
-  messages.chant[mixedMessages[0]]
+  messages.chant[Math.floor(Math.random() * 3)]
 } \n
-Your focus should be: ${messages.focus[mixedMessages[1]]} \n
-And you should avoid: ${messages.avoid[mixedMessages[2]]}`;
+Your focus should be: ${messages.focus[Math.floor(Math.random() * 3)]} \n
+And you should avoid: ${messages.avoid[Math.floor(Math.random() * 3)]}`;
 console.log(message);
